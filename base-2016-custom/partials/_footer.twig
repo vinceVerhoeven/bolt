@@ -1,0 +1,41 @@
+<div class="navbar navbar-default navbar-bottom">
+    <div class="container">
+        <div class="col-md-4 col-xs-12">
+            <section class="footer-contact">
+                <p>Email: website@info.com</p>
+                <p>Tel: 03483240832</p>
+            </section>
+            <section class="footer-socials">
+                <p>Volg ons</p>
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-twitter"></i></a>
+                <a href="#"> <i class="fa fa-linkedin"></i></a>
+            </section>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <section class="footer-nav">
+                <p>Links binnen de website</p>
+                {{ menu('custom', 'partials/_footer_menu.twig') }}
+            </section>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <section class="newsletter-footer">
+                <div class="form-group">
+                    <P>Altijd up-to-date met onze nieuwsbrief</P>
+                    <input type="email" class="form-control" placeholder="Jouw email">
+                </div>
+                <button type="button" class="btn btn-default accent-bg-Color white">Schrijf in</button>
+            </section>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <p>Realisatie door Vince</p>
+        </div>
+    </div>
+</div>
+
+<script src="{{ paths.theme }}js/jquery.min.js"></script>
+<script src="{{ paths.theme }}js/owl.carousel.js"></script>
+<script src="{{ paths.theme }}js/bootstrap.js"></script>
+<script src="{{ paths.theme }}js/app.js"></script>

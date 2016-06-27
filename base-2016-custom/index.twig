@@ -1,0 +1,26 @@
+{{ include('partials/_header.twig') }}
+<body>
+{{ include('partials/_navbar.twig') }}
+
+<div class="container-fluid">
+        <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="{{ paths.theme }}images/02.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="{{ paths.theme }}images/06.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="{{ paths.theme }}images/07.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="{{ paths.theme }}images/03.jpg" alt="The Last of us"></div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="contentWrapper">
+
+
+        <h1>{{ record.title }}</h1>
+        {{ record.body }}
+
+        <!-- {{ include('partials/_aside.twig') }} -->
+    </div>
+</div>
+{{ include('partials/_footer.twig') }}
+</body>
+</html>

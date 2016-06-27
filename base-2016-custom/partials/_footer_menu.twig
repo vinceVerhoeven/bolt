@@ -1,0 +1,8 @@
+{# The main menu loop: Iterates over the items, calling `display_menu_item` #}
+<ul class="footer-menu">
+    {% for item in menu %}
+        {% if item.label is defined %}
+            <li><a href="{{ item.link }}">{{ item.label }} </a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
